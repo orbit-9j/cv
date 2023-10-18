@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+
+\renewcommand{\familydefault}{\sfdefault} 
+
+\pagestyle{empty} % Removes page numbers, headers, and footers
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}
+{0em}{0em}{0.5em}
+
+
+%SUBSECTION 
+\titleformat{\subsection}[runin]
+{\bfseries }
+{}
+{0em}
+{}[:]
+
+\titlespacing{\subsection}
+{0em}{0.3em}{0.4em}
+
+\newcommand{\verticalline}[1][1pt]{\rule[-0.35ex]{#1}{0.9em}}
+
+%HEADER
+\usepackage{titling}
+\usepackage{hyperref}
+\renewcommand{\maketitle}{
+\begin{center}
+    {\huge\bfseries
+    \theauthor \hspace{0.5em}{\verticalline[1.5pt]}\hspace{0.5em}Graduate Game Developer} 
+
+    \vspace{0.7em}
+
+    \ulink{https://orbit-9j.github.io/Portfolio/}{Portfolio} 
+    \textbf{$\bullet$  Cardiff, United Kingdom $\bullet$ tianek@protonmail.com  $\bullet$ 07394107227}
+\end{center}
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    pdfborder={0 0 0}
+}
+
+\usepackage[normalem]{ulem} %underline for links
+\newcommand{\ulink}[2]{\href{#1}{\uline{#2}}}
+
+\usepackage[margin=2.3cm]{geometry}
+    
+\setlength{\parindent}{0pt}
+
+%--------------------------------------CV--------------------------------------
+\begin{document}
+    \author{Rin Tian}
+    \maketitle
+
+    \section{Profile}
+    Recent graduate of \textbf{BSc Computer Science} with \textbf{First Cass Honours}, interested in projects that combine \textbf{coding} and \textbf{graphics}. Looking to further develop programming skill set, gain real life experience, and improve creativity. 
+
+    \begin{center}
+        \section{Skills} 
+        \subsection{Technical}Unity 2D, C\# $\bullet$ Python 3, Java $\bullet$ Version Control with Git $\bullet$ Krita
+        
+        \subsection{Soft}Attention to detail $\bullet$ Creativity $\bullet$ Continuous Learning $\bullet$
+        Presentation $\bullet$ Teamwork $\bullet$ Communication $\bullet$ Organisation 
+    \end{center}
+   
+    \section{Recent Projects}
+    \begin{itemize}[itemsep=3pt, leftmargin=1em]
+        \item \ulink{https://orbit-9j.github.io/Portfolio/\#/Cyberscape:\%20a\%20Cybersecurity\%20RPG}{\textbf{Role Playing Game to teach cybersecurity to novices, 05/2023:}} \textbf{Dissertation} project with \textbf{4} game \textbf{levels} covering encryption and phishing concepts, created in \textbf{Unity} engine and coded with \textbf{C\#}. Wrote and followed a 12-week \textbf{time plan}, \textbf{organised} research material using the note taking app \textbf{Obsidian}. Modified \textbf{Creative Commons} assets and \textbf{drew} own assets using \textbf{Krita}. Conducted \textbf{user testing} with \textbf{5 participants} following approval of the university's \textbf{ethics committee}. Scored \textbf{74\%} in the assessment.
+        \item \ulink{https://orbit-9j.github.io/Portfolio/\#/Psychodyssey}{\textbf{Psychological Horror Game Research and Prototype, 01/2023:}} Conducted a \textbf{survey} with \textbf{19} responses to \textbf{design} an effective psychological horror game that raises awareness of autism. \textbf{Presented} research findings as a poster to class of \textbf{50} students. Laid out research \textbf{findings} on a \textbf{\ulink{https://miro.com/app/board/uXjVPMzhjBo=/?share_link_id=722803847643}{Miro}} board. \textbf{Designed} the game's \textbf{prototype} using \textbf{\ulink{https://www.figma.com/file/pyHXkKKN4cn5MtXx4WpAHR/design-cw?t=gjgzJrZM4Dd0YaZP-1}{Figma}}.  Exchanged \textbf{feedback} with members of a \textbf{team} of \textbf{4} throughout the project to aid in their individual research. Scored \textbf{83\%} in the assessment. Continues to expand the world, characters,  and storyline to create a full-length video game from the prototype. 
+        \item \ulink{https://orbit-9j.github.io/Portfolio/\#/Puzzle\%20Dungeon:\%20a\%20Multiplayer\%20Puzzle\%20Game}{\textbf{Puzzle Dungeon game, 05/2022:}} \textbf{Led} a \textbf{team} of \textbf{3} to meet \textbf{client} requirements for a \textbf{multiplayer} puzzle game over a 2-semester period. Used the \textbf{Unity} game engine with the Mirror \textbf{library} to create the game. Used \textbf{GitLab} to keep track of changes by team members. \textbf{Presented} game progress in 2 client \textbf{meetings}. Scored \textbf{66\%} in the assessment.
+    \end{itemize}
+
+    \section{Work Experience}
+    \begin{itemize}[itemsep=0pt, leftmargin=1em]
+         \item \textbf{Game Developer work experience at Cloth Cat, Cardiff, 10/2023:} Self-study of \textbf{Unity 3D}, \textbf{Godot}, and \textbf{Blender}. Created a horror game level environment in Unity 3D and a scene of a monster in Blender.
+    \end{itemize}
+
+    \section{Education}
+    \subsection{Venture Graduates Digital Bootcamp, 09/2023}Learned topics such as UI design, Marketing, Project Management, Digital Communication \& Collaboration 
+    \subsection{Cardiff University, Cardiff, 2020-2023} 
+    BSc Computer Science with Security and Forensics  \verticalline{} First Class Honours
+    \begin{itemize}[itemsep=0pt, leftmargin=1em, topsep=-\parskip]
+        \item \textbf{Relevant modules:} Object Orientation Algorithms and Data Structures, Human-Computer Interaction, Design Thinking and Prototyping for UX, Developing Quality Software
+    \end{itemize}
+    \subsection{Badminton School, Bristol, 2015-2020}
+    GCSE: 9 A*s, 1 A \verticalline{} A-level: A*AAB
+\end{document}
