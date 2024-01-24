@@ -1,9 +1,16 @@
 \documentclass[11pt]{article}
 \usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[absolute,overlay]{textpos}
 
 \renewcommand{\familydefault}{\sfdefault} 
 
-\pagestyle{empty} % Removes page numbers, headers, and footers
+%\pagestyle{empty} % Removes page numbers, headers, and footers
+
+\pagestyle{fancy}
+\fancyhf{} % Clear header and footer
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
 
 \usepackage{titlesec}
 \titleformat{\section}
@@ -60,6 +67,10 @@
 
 %--------------------------------------CV--------------------------------------
 \begin{document}
+\begin{textblock*}{\paperwidth}(-270pt,5pt)
+    \hspace*{\fill}\raisebox{-0.5\height}{\includegraphics[height=2cm]{QRcode.png}}
+\end{textblock*}
+\vspace*{-0.8cm}
     \author{Rin Tian}
     \maketitle
 
@@ -69,32 +80,31 @@
     \begin{center}
         \section{Skills} 
         \subsection{Technical}
-    HTML5, CSS3, React JS $\bullet$ Version Control with Git $\bullet$  GitHub pages
+    HTML5, CSS3, React JS $\bullet$ Version Control with Git $\bullet$ GitHub pages, cPanel 
         
         \subsection{Soft}Attention to detail $\bullet$ Creativity $\bullet$ Continuous Learning $\bullet$
-        Presentation $\bullet$ Teamwork $\bullet$ Communication $\bullet$ Organisation 
+        Presentation $\bullet$ Teamwork $\bullet$ Communication $\bullet$ Project Management 
     \end{center}
    
     \section{Work Experience}
     \begin{itemize}[itemsep=3pt, leftmargin=1em]
-        \item \ulink{https://poolmaster.pt/} {\textbf{Web Developer at Pool Master, 10/2023-ongoing:}} Made a \textbf{bilingual} single-page HTML landing page with a \textbf{PHP contact form}, hosted on \textbf{PTServidor} with \textbf{custom emails}. Set up a bilingual \textbf{Shopify} online store connected to a \textbf{subdomain}. Implemented \textbf{SEO} with \textbf{schemas}, \textbf{meta descriptions}, \textbf{Google Search Console}, and a \textbf{Google Business Profile}.
+        \item \ulink{https://poolmaster.pt/} {\textbf{Web Developer at Pool Master, 10/2023-ongoing:}} Made a \textbf{bilingual} single-page \textbf{responsive} HTML landing page with a \textbf{PHP contact form}, hosted on \textbf{PTServidor} with \textbf{custom email addresses}. Set up a bilingual \textbf{Shopify} online store connected to a \textbf{subdomain}. Implemented \textbf{SEO} with \textbf{schemas}, \textbf{meta descriptions}, \textbf{Google Search Console}, and a \textbf{Google Business Profile}.
     \end{itemize}
 
     \section{Recent Projects}
     \begin{itemize}[itemsep=3pt, leftmargin=1em]
-        \item \ulink{https://orbit-9j.github.io/LearningCompanyRedesign/index.html}{\textbf{Learning Company website redesign, 10/2023:}} \textbf{Analysed} aesthetic and usability \textbf{problems} of a page of the current website of an anonymous learning company. \ulink{https://orbit-9j.github.io/LearningCompanyRedesign/issues.html}{\textbf{Justified}} reasoning and proposed \textbf{solutions} to each problem. Coded a \textbf{prototype} website that addresses the identified problems using \textbf{Vue JS, HTML} and \textbf{CSS}. \textbf{Iterated} upon the prototype following \textbf{feedback} from the company's representative.
+        \item \ulink{https://orbit-9j.github.io/LearningCompanyRedesign/index.html}{\textbf{Learning Company website redesign, 10/2023:}} \textbf{Analysed} aesthetic and usability \textbf{problems} of a page of the current website of an anonymous learning company.\textbf{Justified} reasoning and proposed \textbf{solutions} to each problem. Coded a \textbf{prototype} website that addresses the identified problems using \textbf{Vue JS, HTML} and \textbf{CSS}. \textbf{Iterated} upon the prototype following \textbf{feedback} from the company's representative.
        \item \ulink{https://orbit-9j.github.io/Portfolio/}{\textbf{Digital Portfolio, 06/2022 - ongoing:}} \textbf{Designed} and implemented a \textbf{responsive multi-page} digital portfolio, made with HTML, CSS, and \textbf{React JS}. Hosted on \textbf{GitHubPages}.
        \item \ulink{https://orbit-9j.github.io/Portfolio/\#/Cyberscape:\%20a\%20Cybersecurity\%20RPG}{\textbf{Role Playing Game to teach cybersecurity to novices, 05/2023:}} \textbf{Dissertation} project with \textbf{4} game \textbf{levels} covering encryption and phishing concepts, created in \textbf{Unity} engine and coded with \textbf{C\#}. Wrote and followed a 12-week \textbf{time plan}, \textbf{organised} research material using the note taking app \textbf{Obsidian}. Modified \textbf{Creative Commons} assets and \textbf{drew} own assets using \textbf{Krita}. Conducted \textbf{user testing} with \textbf{5 participants} following approval of the university's \textbf{ethics committee}. Scored \textbf{74\%} in the assessment.
         \item \ulink{https://orbit-9j.github.io/Portfolio/\#/Psychodyssey}{\textbf{Psychological Horror Game Research and Prototype, 01/2023:}} Conducted a \textbf{survey} with \textbf{19} responses to \textbf{design} an effective psychological horror game that raises awareness of autism. \textbf{Presented} research findings as a poster to class of \textbf{50} students. Laid out research \textbf{findings} on a \textbf{\ulink{https://miro.com/app/board/uXjVPMzhjBo=/?share_link_id=722803847643}{Miro}} board. \textbf{Designed} the game's \textbf{prototype} using \textbf{\ulink{https://www.figma.com/file/pyHXkKKN4cn5MtXx4WpAHR/design-cw?t=gjgzJrZM4Dd0YaZP-1}{Figma}}. Exchanged \textbf{feedback} with members of a \textbf{team} of \textbf{4} throughout the project to aid in their individual research. Scored \textbf{83\%} in the assessment.        
-    \end{itemize}
-    
+    \end{itemize} 
 
     \section{Education}
-    \subsection{Venture Graduates Digital Bootcamp, 09/2023}Learned topics such as UI design, Marketing, Project Management, Digital Communication \& Collaboration 
+    \subsection{Venture Graduates Digital Bootcamp, 09/2023}Learned about Marketing and Digital Collaboration 
     \subsection{Cardiff University, Cardiff, 2020-2023} 
     BSc Computer Science with Security and Forensics  \verticalline{} First Class Honours
     \begin{itemize}[itemsep=0pt, leftmargin=1em,topsep=-\parskip]
-        \item \textbf{Relevant modules:} Web Applications, Human-Computer Interaction, Design Thinking and Prototyping for UX, Developing Quality Software
+        \item \textbf{Relevant modules:} Web Applications, Human-Computer Interaction, Design Thinking and Prototyping for UX, Developing Quality Software,
     \end{itemize}
     \subsection{Badminton School, Bristol, 2015-2020}
     GCSE: 9 A*s, 1 A \verticalline{} A-level: A*AAB
